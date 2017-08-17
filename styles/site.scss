@@ -1,0 +1,44 @@
+---
+---
+
+.header-link {
+  position: absolute;
+  padding-left: 0.375em;
+  opacity: 0;
+  display: inline-block;
+
+  \-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  \-moz-transition: opacity 0.2s ease-in-out 0.1s;
+  \-ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+}
+
+.btn {
+  margin-bottom: 0rem !important;
+  cursor: pointer !important;
+}
+
+.card-block {
+  > :last-child  {
+      margin-bottom: 0;
+  }
+}
+
+.video {
+  width: 75%;
+  margin: auto !important;
+}
+
+img {
+  border: 1px solid #cfcfcf !important;
+}
+
+@import 'jekyll-theme-cayman';
+@import "bootstrap";

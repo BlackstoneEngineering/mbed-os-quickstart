@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+{% include head.html %}
+
+  <body>
+
+  {% include header.html %}
+  
+  <section class="main-content">
+    
+    {% capture main %}{% include main.md %}{% endcapture %}
+    {{ main | markdownify }} 
+    
+    <p></p>
+    
+    <div id="develop" aria-multiselectable="true">
+      
+      {% capture online %}{% include online.md %}{% endcapture %}
+      {{ online | markdownify }}
+
+      {% capture offline %}{% include offline.md %}{% endcapture %}
+      {{ offline | markdownify }}
+
+    </div>
+
+    <p></p>
+
+    <div id="blinky" aria-multiselectable="true">
+      
+      {% capture blinky-online %}{% include blinky-online.md %}{% endcapture %}
+      {{ blinky-online | markdownify }}
+
+      {% capture blinky-offline %}{% include blinky-offline.md %}{% endcapture %}
+      {{ blinky-offline | markdownify }}
+      
+    </div>
+    
+    <p></p>
+    
+    <div id="debug" aria-multiselectable="true">
+      
+      {% capture debugging-online %}{% include debugging-online.md %}{% endcapture %}
+      {{ debugging-online | markdownify }}
+
+      {% capture debugging-offline %}{% include debugging-offline.md %}{% endcapture %}
+      {{ debugging-offline | markdownify }}
+    
+    </div>
+    
+    <p></p>
+    
+    <div id="more" aria-multiselectable="true">
+      
+      {% capture further-reading-online %}{% include further-reading-online.md %}{% endcapture %}
+      {{ further-reading-online | markdownify }}
+
+      {% capture further-reading-offline %}{% include further-reading-offline.md %}{% endcapture %}
+      {{ further-reading-offline | markdownify }}
+    
+    </div>
+
+  </section>
+
+  </body>
+  
+</html>

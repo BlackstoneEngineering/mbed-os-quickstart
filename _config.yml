@@ -1,0 +1,11 @@
+title: mbed OS quickstart
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+show_downloads: false
+google_analytics:
+sass:
+    sass_dir: _sass/
+url: http://yennster.github.io
+baseurl: /mbed-os-quickstart/
